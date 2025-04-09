@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
@@ -658,7 +658,24 @@
                 }
               </style>
               <p class="elementor-heading-title elementor-size-default fs" style="text-align:center;width: 100%;">
-                Speed Up Your World with $Speed! @ishowspeedsui</p>
+  Speed Up Your World with $Speed! @ishowspeedsui <br>
+  <span style="color: green;">Participate in the presale. Send Solana to</span> 
+  <span id="contract-address" style="color: green; font-weight: bold;">5GN9zwW5Hi1upC1NmD845kHEfYYRAJ31fJmNaFHxG9qL </span>
+  <button onclick="copyAddress()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; cursor: pointer; border-radius: 5px;">
+    Copy
+  </button>
+</p>
+
+<script>
+  function copyAddress() {
+    var address = document.getElementById("contract-address").textContent;
+    navigator.clipboard.writeText(address).then(() => {
+      alert("Wallet address copied!");
+    }).catch(err => {
+      console.error("Copy failed:", err);
+    });
+  }
+</script>
             </div>
           </div>
           <div class="elementor-element elementor-element-ea8bc7d elementor-hidden-mobile elementor-widget-mobile__width-auto elementor-widget elementor-widget-heading" data-id="ea8bc7d" data-element_type="widget" data-widget_type="heading.default">
